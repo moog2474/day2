@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* min-width-tei hiiheer bolohgu bsn tul max-width-r urgunig n zohioj uguw */
+        @media screen and (max-width:2400px) {
+            body{
+                background-color: rgba(0, 0, 255, 0.513);
+            }
+            .no::after{
+                padding: 20px;
+                border: 1px solid black;
+                border-radius: 50px;
+                content: 'web 1024px ----->';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        }
+        @media screen and (max-width:1600px) {
+            body{
+                background-color: rgba(255, 0, 0, 0.532);
+            }
+            .no::after{
+                padding: 20px;
+                border: 1px solid black;
+                border-radius: 10px;
+                content: 'Tablet 720px ---->1024px';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        }
+        @media screen and (max-width:1000px) {
+            body{
+                background-color: rgba(0, 125, 0, 0.514);
+            }
+            .no::after{
+                padding: 20px;
+                border: 1px solid black;
+                content: 'Mobile 425px ----->768px';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="no"></div>
+</body>
+</html>
